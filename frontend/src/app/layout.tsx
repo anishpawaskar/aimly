@@ -26,12 +26,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
         </ThemeProvider>
       </body>
